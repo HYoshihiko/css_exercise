@@ -88,12 +88,12 @@ h1 {
 footer {
     background: black;
     text-align: center;
-    padding: 25px 0;
 }
 
 footer p {
     color: #fff;
     font-size: 0.875rem;
+    padding-top: 5px;
 }
 
 /* タブレット版
@@ -148,13 +148,10 @@ footer p {
     /* footer
     -------------------- */
     footer {
-        margin: 1% 1%;
         height: 40px;
-        padding: 0;
     }
     footer p {
         font-size: 16px;
-        padding: 5px 20px;
     }
 
 /*スマートフォン版
