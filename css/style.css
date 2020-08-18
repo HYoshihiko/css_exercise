@@ -16,6 +16,10 @@ a {
     color: black;  
 }
 
+img {
+    max-width: 100%;
+}
+
 /* header
 ---------------------- */
 header .wrapper {
@@ -27,7 +31,6 @@ header .wrapper {
 
 h1 {
     font-family: 'Abril Fatface';
-    display: flex;
     justify-content: space-between;
     font-size: 60px;
     padding-bottom: 30px;
@@ -50,23 +53,23 @@ h1 {
 
 .main-body img {
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 250px;
+    height: 240px;
+    width: 240px;
+    margin-left: 60px;
 }
 
 .main-body p {
+    flex: 1;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 30px;
-    margin-top: 80px;
-    margin-left: 70px;
-    margin-right: 250px;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 50px;
+    text-align: left;
 }
 
 .main-body {
     display: flex;
+    margin: 0 40px 20px;
 }
 
 .main-title {
@@ -99,14 +102,19 @@ footer p {
 -------------------- */
 @media (max-width: 768px) {
     .home {
-        margin: 20px auto;
-        font-size: 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 40px;
     }
+
+    h1 {
+    padding-bottom: 10px;
+}
 
     .sns-list {
         font-size: 30px;
-        margin: 40px 30px auto;
-        padding-right: 5px;
+        margin: 0 30px 0 auto;
     }
 
     /* main
@@ -128,8 +136,8 @@ footer p {
 
     .main-body img {
         margin: auto;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .main-body p {
@@ -152,55 +160,18 @@ footer p {
 
 /*スマートフォン版
 -------------------- */
-@media (max-width: 768px) {
-    .home {
-        margin: 20px auto;
-        font-size: 50px;
-    }
-
-    .sns-list {
-        font-size: 30px;
-        margin: 40px 30px auto;
-        padding-right: 5px;
-    }
-
+@media (max-width: 480px) {
     /* main
     -------------------- */
-    header .wrapper {
-        flex-direction: column;
-    }
-
     .main-title {
-        margin-top: 60px;
+        margin-top: 20px;
         font-size: 30px;
-    }
-
-    .main-body {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .main-body img {
-        margin: auto;
-        width: 300px;
-        height: 300px;
     }
 
     .main-body p {
-        font-size: 16px;
-        margin: 30px 50px;
-        text-align: left;
+    font-size: 10px;
     }
 
-    /* footer
-    -------------------- */
-    footer {
-        margin: 1% 1%;
-        height: 40px;
-        padding: 0;
-    }
-    footer p {
-        font-size: 16px;
-        padding: 5px 20px;
+    .sns-list {
+        font-size: 20px;
     }
