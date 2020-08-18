@@ -60,7 +60,6 @@ h1 {
 
 .main-body p {
     flex: 1;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 16px;
     margin-left: 30px;
     margin-right: 50px;
@@ -82,7 +81,6 @@ h1 {
 
 .main-image {
     max-width: 100%;
-    padding: 0 10px;
 }
 
 /* footer
@@ -91,8 +89,8 @@ footer {
     background: black;
     text-align: center;
     padding: 25px 0;
-    margin: 10px;
 }
+
 footer p {
     color: #fff;
     font-size: 0.875rem;
@@ -145,6 +143,7 @@ footer p {
         margin: 30px 50px;
         text-align: left;
     }
+}
 
     /* footer
     -------------------- */
@@ -175,3 +174,4 @@ footer p {
     .sns-list {
         font-size: 20px;
     }
+}
